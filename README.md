@@ -1,6 +1,6 @@
 # Zara AI
 
-Zara AI is a small **embedded chat UI** for your product: a floating **trigger** opens a **full-height side panel** with an intro screen, starter prompts, and a composer. The UI is **React 19** and **Tailwind CSS v4**; scripts and tooling are defined in `package.json`.
+Zara AI is a small **embedded chat UI** for your product: a floating **trigger** opens a **full-height side panel** with an intro screen, starter prompts, and a composer. The UI is **React 19** and **Tailwind CSS v4**. Install and run everything with **[Bun](https://bun.sh)** (`package.json` scripts call Bun for dev, build, and start).
 
 ## What you get
 
@@ -15,28 +15,28 @@ From the repository root:
 1. **Install dependencies**
 
    ```bash
-   npm install
+   bun install
    ```
 
 2. **Run the app in development** (hot reload)
 
    ```bash
-   npm run dev
+   bun run dev
    ```
 
 3. **Production build** (static output under `dist/`)
 
    ```bash
-   npm run build
+   bun run build
    ```
 
 4. **Run the production server** (serves the built app)
 
    ```bash
-   npm start
+   bun run start
    ```
 
-The dev and start scripts run the commands defined in `package.json`. If a script fails locally, check that the same command works when invoked by your package manager.
+These map to the `dev`, `build`, and `start` scripts in `package.json`. You need [Bun](https://bun.sh) installed and on your `PATH`.
 
 ## Using `<Trigger />`
 
